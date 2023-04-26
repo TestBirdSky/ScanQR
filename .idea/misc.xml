@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/bg_raidus12_2.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable-v24/bg_raidus24_3.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable-v24/bg_raidus4_1.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable-v24/bg_scanner_center2.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable-v24/ic_privacy_25.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable-v24/ic_share_25.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable-v24/ic_update_25.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable/bg_raidus10.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable/bg_raidus12_1.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable/bg_raidus12_3.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable/bg_scanner_center.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable/ic_contact_25.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable/ic_next_30.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable/theme_bg.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/ac_create_qr.xml" value="0.18070652173913043" />
+        <entry key="app/src/main/res/layout/ac_scan_result.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/ac_setting.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_lanucher.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_launcher.xml" value="0.18070652173913043" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/activity_scan_result.xml" value="0.18070652173913043" />
+        <entry key="app/src/main/res/layout/activity_scanning.xml" value="0.16032608695652173" />
+        <entry key="app/src/main/res/layout/activity_web_view.xml" value="0.1693840579710145" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

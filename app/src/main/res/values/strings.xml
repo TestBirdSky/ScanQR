@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Scan QR</string>
+    <string name="scan">Scan</string>
+    <string name="text">Text</string>
+    <string name="create_qr">Create QR</string>
+    <string name="please_enter_text">Please enter text…</string>
+    <string name="create">Create</string>
+    <string name="print">Print</string>
+    <string name="setting">Setting</string>
+    <string name="contact_us">Contact us</string>
+    <string name="privacy_agreement">Privacy agreement</string>
+    <string name="update">Update</string>
+    <string name="share">Share</string>
+    <string name="save_to_album">Saved to phone album</string>
+</resources>
