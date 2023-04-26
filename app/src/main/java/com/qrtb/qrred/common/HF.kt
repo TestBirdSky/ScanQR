@@ -116,7 +116,6 @@ fun Context.saveBitmapToMedia( bitmap: Bitmap, saveSuccess: () -> Unit = {}) {
         MediaScannerConnection.scanFile(
             applicationContext, arrayOf(file.absolutePath), null
         ) { path, uri ->
-            // 扫描完成后的操作
             saveSuccess.invoke()
         }
     }.onFailure {
@@ -136,7 +135,6 @@ private fun Context.saveBitmapToMedia2(bitmap: Bitmap, saveSuccess: () -> Unit =
     MediaScannerConnection.scanFile(
         applicationContext, arrayOf(path), null
     ) { _, uri ->
-        // 扫描完成后的操作
         saveSuccess.invoke()
     }
 }
@@ -150,7 +148,6 @@ fun Context.shareBitmapToOtherApp(bitmap: Bitmap) {
         resources.getString(R.string.app_name),
         "qr code Picture"
     )
-    "shareBitmapToOtherApp -->saveBitmapToMedia -->$path".log()
     val uri = Uri.parse(path)
     Intent().apply {
         type = "image/*"

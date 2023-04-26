@@ -6,6 +6,7 @@ import com.qrtb.qrred.R
 import com.qrtb.qrred.base.BaseActivity
 import com.qrtb.qrred.common.toActivity
 import com.qrtb.qrred.databinding.ActivityLauncherBinding
+import com.qrtb.qrred.isAppResume
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
@@ -34,7 +35,6 @@ class LauncherActivity : BaseActivity<ActivityLauncherBinding>(R.layout.activity
                 }
             }
         }
-
     }
 
     private fun flowStart(): Flow<Int> {
@@ -50,8 +50,10 @@ class LauncherActivity : BaseActivity<ActivityLauncherBinding>(R.layout.activity
         }.flowOn(Dispatchers.Main)
     }
 
-    private fun jumpMain(){
-        toActivity<MainActivity>()
+    private fun jumpMain() {
+        if (isAppResume) {
+            toActivity<MainActivity>()
+        }
         finish()
     }
 

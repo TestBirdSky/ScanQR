@@ -1,8 +1,10 @@
 package com.qrtb.qrred.ac
 
+import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.lifecycleScope
@@ -27,13 +29,18 @@ class CreateActivity : BaseActivity<AcCreateQrBinding>(R.layout.ac_create_qr) {
             tvCreate.setOnClickListener {
                 val input = etInput.text.toString()
                 createQrCode(input)
+                hideSoft(etInput)
                 showCreateResult()
             }
             layoutDownload.setOnClickListener {
                 checkReadMediaPermission {
                     mBitmap?.let {
                         saveBitmapToMedia(it) {
-                            Toast.makeText(this@CreateActivity,getString(R.string.save_to_album),Toast.LENGTH_LONG).show()
+                            Toast.makeText(
+                                this@CreateActivity,
+                                getString(R.string.save_to_album),
+                                Toast.LENGTH_LONG
+                            ).show()
                         }
                     }
                 }
@@ -73,5 +80,10 @@ class CreateActivity : BaseActivity<AcCreateQrBinding>(R.layout.ac_create_qr) {
             binding.ivQrCode.setImageBitmap(mBitmap)
             showCreateResult()
         }
+    }
+
+    private fun hideSoft(view: View) {
+        val imm = applicationContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 }
